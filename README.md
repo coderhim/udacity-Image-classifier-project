@@ -17,9 +17,9 @@ To train the image classifier, use the `train.py` script. You need to provide th
 
 - `data_dir` (mandatory): Provide the path to the data directory containing the training and validation sets.
 - `--save_dir` (optional): Provide the directory where the trained model checkpoint will be saved. If not specified, the default directory will be used.
-- `--arch` (optional): Specify the architecture to use for the classifier. Use `--arch vgg13` to use the VGG13 model, otherwise, the AlexNet model will be used.
+- `--arch` (optional): Specify the architecture to use for the classifier. Use `--arch vgg16` to use the VGG16 model, otherwise, the AlexNet model will be used.
 - `--lrn` (optional): Learning rate for the training. Default value is 0.001.
-- `--hidden_units` (optional): Number of hidden units in the classifier. Default value is 2048.
+- `--hidden_units` (optional): Number of hidden units in the classifier.(there are 3 hidden layers:{6272,1045,522}hidden units)
 - `--epochs` (optional): Number of epochs for training. Default value is 10.
 - `--GPU` (optional): Specify this flag if you want to use GPU for training.
 
